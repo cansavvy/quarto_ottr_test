@@ -271,7 +271,7 @@ div.notice{
 }
 
 div.notice{
-  background-image: url("/assets/box_images/note.png");
+  background-image: url("./assets/box_images/note.png");
 }
 
 div.warning{
@@ -288,7 +288,7 @@ div.warning{
 }
 
 div.warning{
-  background-image: url("/assets/box_images/warning.png");
+  background-image: url("./assets/box_images/warning.png");
 }
 
 
@@ -307,7 +307,7 @@ div.github{
 }
 
 div.github{
-  background-image: url("/assets/box_images/github.png");
+  background-image: url("./assets/box_images/github.png");
 }
 
 div.dictionary{
@@ -324,7 +324,7 @@ div.dictionary{
 }
 
 div.dictionary{
-  background-image: url("/assets/box_images/dictionary.png");
+  background-image: url("./assets/box_images/dictionary.png");
 }
 
 
@@ -342,7 +342,7 @@ div.reflection{
 }
 
 div.reflection{
-  background-image: url("/assets/box_images/thinking_face.png");
+  background-image: url("./assets/box_images/thinking_face.png");
 }
 
 
@@ -471,3 +471,5 @@ a.anchor:hover {
   font-size: .85em;
   color: #193a5c;
 }
+
+/*-- scss:defaults --*/
