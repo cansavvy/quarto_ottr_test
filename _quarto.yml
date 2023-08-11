@@ -1,0 +1,57 @@
+project:
+  type: website
+
+website:
+  title: "OTTR Website"
+  favicon: "dasl_favicon.ico"
+  page-footer:
+    left: |
+      Template created by
+      [![](https://hutchdatascience.org/NIH_Data_Sharing/assets/big-dasl-stacked.png){fig-alt="Hutch DASL" width=65px}](https://hutchdatascience.org/)
+    center:
+      - text: "About"
+        href: about.qmd
+      - text: "Feedback form"
+        href: "https://forms.gle/hc8Xt3Y2Znjb6M4Y7"
+      - text: "License"
+        href: "https://creativecommons.org/licenses/by/4.0/"
+    right:
+      - icon: github
+        href: https://github.com/fhdsl/quarto_ottr_test
+        aria-label: Template GitHub Repo
+  navbar:
+    background: primary
+    left:
+      - href: about.qmd
+        text: About
+      - href: 01-intro.qmd
+        text: Intro
+      - href: 02-chapter_of_course.qmd
+        text: Chapter 1
+      - href: References.qmd
+        text: References
+      - href: credits.qmd
+        text: Credits
+  site-url: https://hutchdatascience.org/quarto_ottr_test/
+  repo-url: https://github.com/fhdsl/quarto_ottr_test
+  issue-url: https://github.com/fhdsl/quarto_ottr_test/issues/new/choose
+  repo-actions: [edit, issue]
+  page-navigation: true
+
+format:
+  html:
+    css: /assets/style.css
+    toc: true
+    includes:
+      before_body: /assets/big-image.html
+      after_body: /assets/footer.html
+      before: |
+       <a href="https://www.itcrtraining.org/"><img src="assets/ITN_logo.png" style="padding-left: 15px; padding-top: 8px;"</a>
+      after: |
+       <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+       <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+       <a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+       <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+       <p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/hc8Xt3Y2Znjb6M4Y7"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+  pdf:
+    documentclass: scrreport
