@@ -3,8 +3,22 @@ project:
 
 website:
   title: "OTTR Website"
-  image: "./assets/dasl_thin_main_image.png"
   favicon: "dasl_favicon.ico"
+  page-footer:
+    left: |
+      Template created by
+      [![](https://hutchdatascience.org/NIH_Data_Sharing/assets/big-dasl-stacked.png){fig-alt="Hutch DASL" width=65px}](https://hutchdatascience.org/)
+    center:
+      - text: "About"
+        href: about.qmd
+      - text: "Feedback form"
+        href: "https://forms.gle/hc8Xt3Y2Znjb6M4Y7"
+      - text: "License"
+        href: "https://creativecommons.org/licenses/by/4.0/"
+    right:
+      - icon: github
+        href: https://github.com/fhdsl/quarto_ottr_test
+        aria-label: Template GitHub Repo
   navbar:
     background: primary
     left:
@@ -18,6 +32,11 @@ website:
         text: References
       - href: credits.qmd
         text: Credits
+  site-url: https://hutchdatascience.org/quarto_ottr_test/
+  repo-url: https://github.com/fhdsl/quarto_ottr_test
+  issue-url: https://github.com/fhdsl/quarto_ottr_test/issues/new/choose
+  repo-actions: [edit, issue]
+  page-navigation: true
 
 format:
   html:
