@@ -19,8 +19,7 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: assets/styles.css
+    theme: assets/style.scss
     toc: true
   pdf:
     documentclass: scrreport
